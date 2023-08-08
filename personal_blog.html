@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            box-sizing: border-box;
+            height: 100%;
+        }
+
+        body {
+            height: inherit;
+            font-family: 'Lucida Sans';
+            background: url(unsplash.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            color: #fff;
+        }
+
+        .logo {
+            margin-top: 100px;
+            margin-left: 150px;
+        }
+
+        nav {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 5px 0;
+        }
+
+        nav ul {
+            flex: 1;
+            text-align: right;
+            padding-right: 30px;
+            margin-top: -70px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 10px 30px;
+            font-size: 22px;
+            color: orangered;
+            transition: all 400ms ease;
+        }
+
+        nav ul li:hover {
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .introduction {
+            margin-top: -50px;
+            margin-left: 150px;
+        }
+
+        .introduction h1 {
+            font-size: 55px;
+        }
+
+        .introduction h2 {
+            font-size: 45px;
+            margin-top: -30px;
+            color: orangered;
+        }
+
+        .profile_info {
+            margin-left: 150px;
+        }
+
+        .profile_info p {
+            font-size: 30px;
+        }
+
+        .more_info {
+            margin-left: 150px;
+        }
+
+        .more_info button:first-child {
+            width: 200px;
+            height: 50px;
+            background: orangered;
+            border: none;
+            border-radius: 10px;
+            color: #fff;
+            font-size: 25px;
+            cursor: pointer;
+            transition: all 400ms ease;
+        }
+
+        .more_info button:first-child:hover {
+            background: transparent;
+            border: 1px solid orangered;
+            color: orangered;
+        }
+
+        .more_info button:last-child {
+            width: 200px;
+            height: 50px;
+            background: transparent;
+            border: 1px solid orangered;
+            border-radius: 10px;
+            color: orangered;
+            font-size: 25px;
+            cursor: pointer;
+            transition: all 400ms ease;
+        }
+
+        .more_info button:last-child:hover {
+            background: orangered;
+            border: none;
+            color: #fff;
+        }
+
+        @media screen and (max-width: 600px) {
+            .logo {
+                margin-top: -10px;
+                margin-left: -5px;
+            }
+
+            nav {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                flex-wrap: wrap;
+                padding: 5px 0;
+            }
+
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                text-align: right;
+                padding-right: 30px;
+                margin-top: -60px;
+                margin-right: -40px;
+            }
+
+            nav ul li {
+                font-size: 30px;
+            }
+
+            .introduction {
+                margin-left: -5px;
+            }
+
+            .profile_info {
+                margin-left: -5px;
+            }
+
+            .more_info {
+                margin-left: -1px;
+            }
+
+            .more_info button:first-child {
+                margin-bottom: 10px;
+            }
+
+            .more_info button:last-child {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="logo">
+        <h1>JTECHX.</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Portfolio</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="introduction">
+        <h1>I'm JtechX</h1>
+        <h2>Web3 Designer</h2>
+    </div>
+    <div class="profile_info">
+        <p>I'm a graphics designer, UI/UX designer, Product designer and Brand Identity Manager<br> with 3 years of
+            experience. I design stellar websites and apps that are<br> visually appealing and user-friendly. I also
+            specialize in building Web3<br> Fintech products.</p>
+    </div>
+    <div class="more_info">
+        <button>Hire me</button>
+        <button>Let's talk</button>
+    </div>
+</body>
+
+</html>
